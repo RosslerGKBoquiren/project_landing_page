@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Section */
+.search-section {
+  position: relative;
+  height: 1350px;
+  overflow: hidden;
+}
+
+.search-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input[type="search"] {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hero Section */
+.hero {
+  background: url('ibiza.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero h1, .hero p {
+  margin: 0;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero a {
+  margin-top: 20px;
+}
+
+/* Features Section */
+.features {
+  background-color: #f9f9f9;
+  margin-top: 30px;
+}
+
+.features .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.features .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.features .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Destinations Section */
+.destinations .col-md-3 img {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.destinations .col-md-3:hover img {
+  transform: scale(1.1);
+}
+
+.destinations .col-md-3 {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.destinations .col-md-3:hover {
+  transform: translateY(-10px);
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f1f1f1;
+  padding: 40px 20px;
+}
+
+.testimonials p {
+  font-style: italic;
+}
+
+.testimonials h6 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+}
+
+footer h5 {
+  font-weight: bold;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #00aaff;
+}
+
+footer .social-icons a {
+  color: white;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #00aaff;
+}
